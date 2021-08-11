@@ -24,10 +24,12 @@ function App() {
 
   return (
     <div>
-      <h1>Hello {getTitle('React')}</h1>
+      <h1>My Hacker Stories</h1>
 
       <label htmlFor="search">Search:</label>
       <input id="search" type="text" />
+
+      {/* Render the list here */}
     </div>
   );
 }
