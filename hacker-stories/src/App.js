@@ -33,19 +33,15 @@ const App = () => {
 
       <hr />
 
-      {/* creating an instance of List component */}
-      <List />
-
-      {/* creating another instance of List component */}
-      <List />
+      <List list={stories} />
 
     </div>
   );
 }
 
 // definition of List component
-const List = () => 
-  list.map((item) => (
+const List = (props) => 
+  props.list.map((item) => (
     <div key={item.objectID}>{item.title}
       <span>
         <a href={item.url}>{item.title}</a>
