@@ -19,7 +19,7 @@ const list = [
   },
 ]
 
-function App() {
+const App = () => {
   // do something in between
 
   return (
@@ -42,8 +42,8 @@ function App() {
 }
 
 // definition of List component
-function List() {
-  return list.map(function(item){
+const List = () => {
+  return list.map((item) => {
     return (
       <div key={item.objectID}>{item.title}
         <span>
