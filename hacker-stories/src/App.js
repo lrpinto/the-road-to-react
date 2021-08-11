@@ -31,12 +31,17 @@ function App() {
 
       <hr />
 
+      {/* creating an instance of List component */}
       <List />
-      
+
+      {/* creating another instance of List component */}
+      <List />
+
     </div>
   );
 }
 
+// definition of List component
 function List() {
   return list.map(function(item){
     return (
