@@ -29,7 +29,9 @@ function App() {
       <label htmlFor="search">Search:</label>
       <input id="search" type="text" />
 
-      {/* Render the list here */}
+      {list.map(function(item){
+        return <div>{item.title}</div>
+      })}
     </div>
   );
 }
