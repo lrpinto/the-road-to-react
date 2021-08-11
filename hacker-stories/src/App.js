@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 
 const App = () => {
   const stories = [
@@ -19,6 +20,8 @@ const App = () => {
       objectID: 1
     },
   ]
+
+  const [searchTerm, setSearchTerm ] = React.useState('');
 
   const handleChange = event => {
     console.log(event.target.value);
